@@ -138,6 +138,9 @@
 		}
 
 @media screen and (min-width: 300px) {
+	.section-cards .prop-card {
+    		width: 95%;
+	}
    .section-cards{
   	grid-template-columns: repeat(1, 1fr);
   }
