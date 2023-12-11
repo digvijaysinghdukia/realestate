@@ -1,0 +1,122 @@
+#listing-section{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-auto-flow: row;
+}
+#search-list{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    background-color: white;
+    grid-auto-flow: row;
+    row-gap: 50px;
+}
+#search-list #normal{
+    width: 90%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 15% 15% auto 40% 10%;
+    grid-column-gap: 20px;
+    row-gap: 30px;
+}
+#search-list #normal input, #search-list #normal select, #search-list #normal button, select{
+    width: 100%;
+    height: 20px;
+    outline: none;
+    height: 36px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: var(--blue);
+    -webkit-appearance: button;
+    appearance: button;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+}
+option{
+    width: 100%;
+    height: 36px;
+    outline: none;
+    height: 36px;
+    font-size: large;
+    background-color: white;
+    color: black;
+}
+
+#advance{
+    width: 90%;
+    height: auto;
+    display: none;
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+    column-gap: 30px;
+    z-index: 5;
+}
+#advance .range{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+#advance .range .label{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-auto-flow: column;
+}
+#list-cards{
+    width: 90%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto;
+    grid-column-gap: 20px;
+}
+#page-buttens{
+    width: 90%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+}
+#page-buttens button{
+    padding: 10px 20px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    background-color: white;
+    transition: 0.5s;
+    font-weight: 600;
+}
+#page-buttens button:hover{
+    background-color: var(--blue);
+    color: white;
+}
+#page-num{
+    width: 90%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    column-gap: 10px;
+    
+}
+#page-num span{
+    padding: 10px;
+    background-color: var(--blue);
+    color: white;
+}
+
+@media screen and (max-width: 750px) {
+    #search-list #normal {
+        grid-template-columns: auto auto auto;
+    }
+    #search{
+        grid-column: 1 / span 2;
+    }
+}

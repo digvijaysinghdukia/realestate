@@ -1,0 +1,199 @@
+#property-show{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 70% auto;
+    padding-top: 50px; 
+    place-items: center;   
+}
+#property-show #page-left-side{
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 40px;
+}
+#property-heading{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    padding-left: 40px;
+}
+ #property-heading-name{
+    display: grid;
+    
+
+}
+ #property-heading-name h3{
+    font-size: xx-large;
+}
+ #property-heading-name p{
+    width: 20%;
+    height: auto;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    color: var(--lightcolor);
+}
+#property-heading-price{
+    font-size: x-large;
+    color: var(--lightcolor);
+}
+/* property-description box */
+#property-description{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.heading-aera{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 15px;
+}
+.heading-aera h4{
+    font-size: larger;
+    display: grid;
+    grid-template-columns: 5% auto;
+    align-items: center;
+    color: var(--headcolor);
+}
+.heading-aera p{
+  color: var(--headcolor);
+}
+.heading-aera h4 div{
+    width: 10px;
+    height: 3rem;
+    background-color: var(--lightcolor);
+}
+#Details-list{
+    width: 100%;
+    height: auto;
+    color: var(--headcolor);;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+#Details-list span{
+    font-weight: 700;
+}
+#floor-plans, #address{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-auto-flow: row;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#floor-plans img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* right side from */
+#page-right-side{
+    width: 100%;
+    height: auto;
+    display: grid;
+    position:relative;
+}
+.inquiry {
+    position:relative;
+    top: -400px;
+    right: 10px;
+    margin: 20px auto;
+    padding: 40px 20px;
+    width: 90%;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #666;
+}
+
+#inquiry-from-logo{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    display: grid;
+    place-items: center;
+}
+#inquiry-from-logo img{
+    width: auto;
+    height: 100px;
+}
+  .inquiry input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 14px 12px;
+    font-size: 16px;
+    border-radius: 2px; 
+    font-family: Raleway, sans-serif;
+  }
+
+
+.inquiry input[type=text]:hover {
+  border-color: #F44336;
+  outline: none;
+  transition: all .2s ease-in-out;
+} 
+
+.inquiry input[type=submit] {
+  border: none;
+  background: var(--blue);
+  color: white;
+  font-weight: bold;  
+  transition: 0.2s;
+  margin: 20px 0px;
+}
+
+.inquiry input[type=submit]:hover {
+  background: #F44336;  
+}
+
+  .inquiry h2 {
+    margin: 20px 0 0; 
+    color: var(--headcolor);
+    font-size: 28px;
+  }
+
+  .inquiry h2,
+  .inquiry a {
+    text-align: center;    
+  }
+
+.inquiry a {
+  text-decoration: none;  
+  font-size: .8em;
+}
+
+.inquiry a:visited {
+  color: inherit;
+}
+
+.inquiry a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  #property-show{
+    grid-template-columns:100%;
+  }
+  #property-show #page-left-side{
+    width: 100%;
+  }
+  .inquiry {
+    top: 0px;
+  }
+}

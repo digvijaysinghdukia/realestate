@@ -1,0 +1,23 @@
+footer{
+    width: 100vw;
+    height: auto;
+    padding-top: 10px;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2 , 1fr);
+    overflow: hidden;
+}
+footer div{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3 , 1fr);
+}
+@media screen and (max-width: 650px) {
+    footer{
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: repeat(2 , 1fr);
+    } 
+}

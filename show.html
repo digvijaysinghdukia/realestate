@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" title="nav-css" href="./navbar.css">
+	<link rel="stylesheet" href="./property-img-slider.css">
+	<link rel="stylesheet" href="./property-show.css">
+	<link rel="stylesheet" title="nav-css" href="./footer.css">
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
+	<script src="./navbar.js"></script>
+	<script src="./property-img-slider.js"></script>
+	<script src="./headerfutter.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+	<!-- web nevbar -->
+
+	<nav id="navBar">
+		<!-- html insert using js -->
+	</nav>
+
+	<!--navbar log in from -->
+		<div id="log_from_window">
+			<!-- html insert using js -->
+			
+		</div>
+
+
+
+
+
+
+
+
+<section id="property-show">
+	<aside id="page-left-side">
+		<div id="property-heading">
+			<div id="property-heading-name">
+				<h3>House</h3><br>
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="#6e6e73" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190Zm120 254q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+					Siker,rajsthan
+				</p>
+			</div>
+			<div id="property-heading-price">&#8377; 3,00,000</div>
+		</div>
+
+		<div id="property-img-slider">
+			<div class="container">
+				<div class="mySlides" style="display: block;">
+				  <div class="numbertext">1 / 6</div>
+				  <img src="./img/home-card.jpg" style="width:100%; height: auto;">
+				</div>
+			  
+				<div class="mySlides">
+				  <div class="numbertext">2 / 6</div>
+				  <img src="./img/home.jpg" style="width:100%; height: auto;">
+				</div>
+			  
+				<div class="mySlides">
+				  <div class="numbertext">3 / 6</div>
+				  <img src="./img/home-card.jpg" style="width:100%; height: auto;">
+				</div>
+				  
+				<div class="mySlides">
+				  <div class="numbertext">4 / 6</div>
+				  <img src="./img/home.jpg" style="width:100%; height: auto;">
+				</div>
+			  
+				<div class="mySlides">
+				  <div class="numbertext">5 / 6</div>
+				  <img src="./img/home-card.jpg" style="width:100%; height: auto;">
+				</div>
+				  
+				<div class="mySlides">
+				  <div class="numbertext">6 / 6</div>
+				  <img src="./img/home.jpg" style="width:100%; height: auto;">
+				</div>
+				  
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+			  
+				<div class="caption-container">
+				  <p id="caption"></p>
+				</div>
+			  
+				<div class="row">
+				  <div class="column">
+					<img class="demo cursor active" src="./img/home-card.jpg" style="width:100%; height: 3rem;" onclick="currentSlide(1)" alt=" ">
+				  </div>
+				  <div class="column">
+					<img class="demo cursor" src="./img/home.jpg" style="width:100%; height: 3rem;" onclick="currentSlide(2)" alt=" ">
+				  </div>
+				  <div class="column">
+					<img class="demo cursor" src="./img/home-card.jpg" style="width:100%; height: 3rem;" onclick="currentSlide(3)" alt="">
+				  </div>
+				  <div class="column">
+					<img class="demo cursor" src="./img/home.jpg" style="width:100%; height: 3rem;" onclick="currentSlide(4)" alt="">
+				  </div>
+				  <div class="column">
+					<img class="demo cursor" src="./img/home-card.jpg" style="width:100%; height: 3rem" onclick="currentSlide(5)" alt="">
+				  </div>    
+				  <div class="column">
+					<img class="demo cursor" src="./img/home.jpg" style="width:100%; height: 3rem" onclick="currentSlide(6)" alt="">
+				  </div>
+				</div>
+			  </div>
+		</div>
+
+
+		<div id="property-description">
+			<div class="heading-aera">
+				<h4><div></div>Description</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perspiciatis provident neque quo ea dolorum corporis dicta ipsum adipisci, harum temporibus iste, nihil at sit porro est culpa excepturi quia!</p>
+			</div>
+			<div id="details-box">
+				<div class="heading-aera">
+					<h4><div></div>Details</h4>
+					<div id="Details-list">
+						<div><span>Price: </span> 21000&#8377;</div>
+						<div><span>Area/Size: </span> 542 sqft</div>
+						<div><span>Rasta: </span> 2</div>
+						<div><span>Property Type: </span> home</div>
+						<div><span>Year Built: </span> 2000 year</div>
+						<div><span>Property Status: </span>On Shell</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Floor Plans -->
+		<div id="floor-plans">
+			<div class="heading-aera">
+				<h4><div></div>Floor Plans</h4>
+				<img src="./img/floor-plan-1.png" alt="img">
+			</div>
+		</div>
+
+		<!-- Address -->
+		<div id="address">
+			<div class="heading-aera">
+				<h4><div></div>Address</h4>
+				<div id="Details-list">
+					<div><span>Address: </span>Bhagwati motors ke samne jaipur road sikar</div>
+					<div><span>City: </span>  sikar</div>
+					<div><span>State: </span> rajasthan</div>
+					<div><span>Pin: </span> 332001</div>
+					<div><span>Country: </span> India</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</aside>
+	
+	<aside id="page-right-side">
+		<form class="inquiry">
+			<div id="inquiry-from-logo"><img title="logo" src="./logo_kh.webp"></div>
+			  <h2>Request Inquiry</h2>
+			  <input type="text" placeholder="your Name" />
+			  <input type="tel"  placeholder="Mobile Number" />
+			  <input type="email"  placeholder="Your Email ID" />
+			  <textarea style="width: 100%;" name="message" id="message" cols="20" rows="8" placeholder="Type your message"></textarea>
+			  <input type="date"  placeholder="Your Email ID" />
+			  <input type="time"  placeholder="Your Email ID" />
+			  <input type="submit" value="Send" />
+			  
+		</form>
+	</aside>
+
+	
+</section>
+
+<!-- footer -->
+<footer id="footer">
+	
+</footer>
+
+
+
+
+
+</body>
+</html>

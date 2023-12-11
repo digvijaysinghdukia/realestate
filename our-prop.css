@@ -1,0 +1,58 @@
+.our-prop{
+	width: 100vw;
+	height: auto;
+	background-color: white;
+	display: grid;
+	grid-template-rows: 30% auto;
+	margin-top: 10%;
+}
+.our-prop .prop-note{
+	width: 95%;
+	height: auto;
+	display: grid;
+	margin-left: 5%;
+	grid-template-rows: auto auto;
+	margin-top: 100px;
+}
+.our-prop .prop-note h2{
+	text-align: left;
+	font-weight: 700;
+	font-size: xx-large;
+	color: var(--headcolor);
+	margin-bottom: 5%;
+}
+.our-prop .prop-note h2 span{
+	color: var(--lightcolor);
+}
+.our-prop .prop-note p{
+	width: 80%;
+	font-weight: 500;
+	font-size: large;
+}
+
+
+.our-prop .prop-list{
+	display: grid;
+	grid-template-columns: auto auto;
+	margin: 5%;
+}
+.our-prop .prop-list .prop-list-card{
+	width: 300px;
+	height: 200px;
+	display: grid;
+	place-items: center;
+	grid-template-columns: 40% 60%;
+}
+
+@media screen and (min-width: 651px) {
+			.our-prop .prop-list {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
+		/* On screens that are 600px wide or less, the background color is olive */
+		@media screen and (max-width: 650px) {
+			.our-prop .prop-list {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}

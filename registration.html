@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" title="nav-css" href="./navbar.css">
+    <link rel="stylesheet" title="nav-css" href="./featured-cards.css">
+    <link rel="stylesheet" title="nav-css" href="./listing.css">
+    <link rel="stylesheet" title="nav-css" href="./footer.css">
+    <link rel="stylesheet" href="./dashboard-froms.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <script src="./navbar.js"></script>
+    <script src="./listing.js"></script>
+    <script src="./headerfutter.js"></script>
+    <style>
+        #registration-from{
+            width: 100vw;
+            height: auto;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- web nevbar -->
+
+	<nav id="navBar">
+		<!-- html insert using js -->
+	</nav>
+
+	<!--navbar log in from -->
+		<div id="log_from_window">
+			<!-- html insert using js -->
+			
+		</div>
+
+
+
+
+    <!-- search listing prop. -->
+    <section id="registration-from">
+        <div id="add-section">
+            <!-- Property Description And Price -->
+            <from class="add-props">
+                <h3>Personal Information</h3><hr><br>
+                <div class="two-col">
+                    <div>
+                        <label for="fname">First Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Enter Your Property Title"><br>
+                    </div>
+                    <div>
+                        <label for="fname">Last Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Enter Your Property Title"></textarea><br>
+                    </div>
+                </div>
+                <div class="two-col">
+                    <div>
+                        <label for="fname">Email Address</label><br>
+                        <input type="email" id="fname" name="fname" placeholder=""><br>
+                    </div>
+                    <div>
+                        <label for="fname">Phone Number</label><br>
+                        <input type="text" id="fname" name="fname" placeholder=""></textarea><br>
+                    </div>
+                </div>
+                <div class="two-col">
+                    <div>
+                        <label for="fname">Date of Birth</label><br>
+                        <input type="date" name="dob" required="">  <br>
+                    </div>
+                    <div>
+                        <label for="fname">Reference ID (if any)</label><br>
+                        <input type="text" name="reference" placeholder="Reference ID (optional)"><br>
+                    </div>
+                </div>
+                <div class="two-col">
+                    
+                    <div>
+                        <label for="fname">Password</label><br>
+                        <input type="text" name="newpass" placeholder="Enter you password" required=""><br>
+                    </div>
+                    <div>
+                        <label for="fname">Confirm Password</label><br>
+                        <input type="password" name="cpass" required="" placeholder="Confirm password"><br>
+                    </div>
+                </div>
+            </from>
+            <from class="add-props">
+                <h3>KYC Details</h3><hr><br>
+                <div class="two-col">
+                    <div>
+                        <label for="fname">Full Name (same as Aadhar)</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Enter Your Property Title"><br>
+                    </div>
+                    <div>
+                        <label for="fname">Aadhar No</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Enter Your Property Title"></textarea><br>
+                    </div>
+                </div>
+                <div class="two-col">
+                    <div>
+                        <label for="fname">PAN Number</label><br>
+                        <input type="text" id="fname" name="fname" placeholder=""><br>
+                    </div>
+                    <div>
+                        <label for="fname">Address</label><br>
+                        <input type="text" id="fname" name="fname" placeholder=""></textarea><br>
+                    </div>
+                </div>
+                <div class="two-col">
+                    <div>
+                        <label for="fname">Pincode</label><br>
+                        <input type="date" name="dob" required="">  <br>
+                    </div>
+                    <div>
+                        <label for="fname">District</label><br>
+                        <input type="text" name="reference" placeholder="Reference ID (optional)"><br>
+                    </div>
+                </div>
+                <div class="two-col">
+                    
+                    <div>
+                        <label for="fname">State</label><br>
+                        <input type="text" name="newpass" placeholder="" required=""><br>
+                    </div>
+                    <div>
+                        <label for="fname">Upload Aadhar (both side)</label><br>
+                        <div class='file-input'>
+                            <input type='file'>
+                            <span class='button'>Choose</span>
+                            <span class='label' data-js-label>No file selected</label>
+                        </div><br>
+                        <Script>
+                            var inputs = document.querySelectorAll('.file-input')
+
+                                for (var i = 0, len = inputs.length; i < len; i++) {
+                                customInput(inputs[i])
+                                }
+
+                                function customInput (el) {
+                                const fileInput = el.querySelector('[type="file"]')
+                                const label = el.querySelector('[data-js-label]')
+                                
+                                fileInput.onchange =
+                                fileInput.onmouseout = function () {
+                                    if (!fileInput.value) return
+                                    
+                                    var value = fileInput.value.replace(/^.*[\\\/]/, '')
+                                    el.className += ' -chosen'
+                                    label.innerText = value
+                                }
+                                }
+                        </Script><br>
+                    </div>
+                </div>
+            </from>
+            <from class="add-props">
+                <h3>Bank Details</h3><hr><br>
+                <div class="two-col">
+                    <div>
+                        <label for="fname">Account Number</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Enter Your Account Number"><br>
+                    </div>
+                    <div>
+                        <label for="fname">Branch Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Branch Name"></textarea><br>
+                    </div>
+                </div>
+                <div class="two-col">
+                    <div>
+                        <label for="fname">IFSC Code</label><br>
+                        <input type="text" id="fname" name="fname" placeholder=""><br>
+                    </div>
+                    <div>
+                        <label for="fname">Account Holder's Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder=""></textarea><br>
+                    </div>
+                </div>
+                
+                <div class="one-col">
+                    <label>Upload Cancel Check OR Bank Statement</label>
+                    <div class="container">
+                        <div class="card">
+                          <div class="drop_box">
+                            <header>
+                              <h6>Select File here</h6>
+                            </header>
+                            <p>Files Supported: JPG, JPEG, PNG, SVG, WEBP</p>
+                            <input type="file" hidden accept=".jpg, .jpeg, .png,.svg, .webp" id="fileID" style="display:none;">
+                            <button class="btn">Choose File</button>
+                          </div>
+                      
+                        </div>
+                    </div>
+                    <script>
+                        const dropArea = document.querySelector(".drop_box"),
+                        button = dropArea.querySelector("button"),
+                        dragText = dropArea.querySelector("header"),
+                        input = dropArea.querySelector("input");
+                        let file;
+                        var filename;
+    
+                        button.onclick = () => {
+                        input.click();
+                        };
+    
+                        input.addEventListener("change", function (e) {
+                        var fileName = e.target.files[0].name;
+                        let filedata = `
+                            <form action="" method="post">
+                            <div class="form">
+                            <h4>${fileName}</h4>
+                            </div>
+                            </form>`;
+                        dropArea.innerHTML = filedata;
+                        });
+    
+                    </script>
+                </div>
+                <div id="submit">
+                    <button>Submit Registration from</button>
+                </div>
+            </from>
+        </div>
+    </section>
+
+   <footer id="footer">
+	
+</footer>  
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>kh</title>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" title="nav-css" href="./navbar.css">
+	<link rel="stylesheet" title="nav-css" href="./hero-section.css">
+	<link rel="stylesheet" title="nav-css" href="./featured-cards.css">
+	<link rel="stylesheet" title="nav-css" href="./our-prop.css">
+	<link rel="stylesheet" title="nav-css" href="./footer.css">
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
+	<script src="./navbar.js"></script>
+	<script src="hero-section.js"></script>
+	<script src="./headerfutter.js"></script>
+	<style type="text/css">
+
+
+	</style>
+</head>
+<body>
+	<!-- web nevbar -->
+
+	<nav id="navBar">
+		<!-- html insert using js -->
+	</nav>
+
+	<!--navbar log in from -->
+		<div id="log_from_window">
+			<!-- html insert using js -->
+			
+		</div>
+
+
+
+
+		<header id="hero-section">
+			<div id="hero-part">
+			  <div class="hero-top">
+				  <h1>The Best Way To Find Your Drem<br>  
+					<span class="txt-type" data-wait="3000" data-words='["House", "Apartment", "Villa", "Office"]'></span><br>
+				  </h1>
+			  </div>
+		  
+			 <div id="hero-prop-list">
+				<div class="counter-container">
+				 <div>
+					<svg xmlns="http://www.w3.org/2000/svg" height="70" viewBox="0 -960 960 960" width="70"><path d="M760-400v-260L560-800 360-660v60h-80v-100l280-200 280 200v300h-80ZM560-800Zm20 160h40v-40h-40v40Zm-80 0h40v-40h-40v40Zm80 80h40v-40h-40v40Zm-80 0h40v-40h-40v40ZM280-220l278 76 238-74q-5-9-14.5-15.5T760-240H558q-27 0-43-2t-33-8l-93-31 22-78 81 27q17 5 40 8t68 4q0-11-6.5-21T578-354l-234-86h-64v220ZM40-80v-440h304q7 0 14 1.5t13 3.5l235 87q33 12 53.5 42t20.5 66h80q50 0 85 33t35 87v40L560-60l-280-78v58H40Zm80-80h80v-280h-80v280Z"/></svg>
+					<div class="counter" data-target="500"></div>
+					<span>Property Listings</span>
+				 </div>
+			   </div>
+			   <div class="counter-container">
+				 <div>
+					<svg xmlns="http://www.w3.org/2000/svg" height="70" viewBox="0 -960 960 960" width="70"><path d="m105-233-65-47 200-320 120 140 160-260 109 163q-23 1-43.5 5.5T545-539l-22-33-152 247-121-141-145 233ZM863-40 738-165q-20 14-44.5 21t-50.5 7q-75 0-127.5-52.5T463-317q0-75 52.5-127.5T643-497q75 0 127.5 52.5T823-317q0 26-7 50.5T795-221L920-97l-57 57ZM643-217q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm89-320q-19-8-39.5-13t-42.5-6l205-324 65 47-188 296Z"/></svg>
+					<div class="counter" data-target="10000"></div>
+					<span>Monthly searches</span>
+				 </div>
+			   </div>
+			   <div class="counter-container">
+				 <div>
+					<svg xmlns="http://www.w3.org/2000/svg" height="70" viewBox="0 -960 960 960" width="70"><path d="M160-120q-33 0-56.5-23.5T80-200v-560q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v560q0 33-23.5 56.5T800-120H160Zm0-80h640v-560H160v560Zm40-80h200v-80H200v80Zm382-80 198-198-57-57-141 142-57-57-56 57 113 113Zm-382-80h200v-80H200v80Zm0-160h200v-80H200v80Zm-40 400v-560 560Z"/></svg>
+					<div class="counter" data-target="10"></div>
+					<span>Daily Listings</span>
+				 </div>
+			   </div>
+			  </div>
+			</div>
+		   
+		</header>
+		  
+		  
+<script type="text/javascript">
+
+// hero-section counter
+const counters = document.querySelectorAll(".counter");
+const plus = "+"
+counters.forEach((counter) => {
+	counter.innerText = "0";
+	const updateCounter = () => {
+	const target = +counter.getAttribute("data-target");
+	const count = +counter.innerText;
+	const increment = target / 1000;
+	if (count < target) {
+		counter.innerText = `${Math.ceil(count + increment)}`;
+		setTimeout(updateCounter, 1);
+	} else counter.innerText = target + plus;
+	};
+	updateCounter();
+});
+
+</script>
+		  
+
+
+<!-- featured section -->
+<section class="featured">
+	<div class="section-heading">
+		<div class="side-line"></div>
+		<div class="h-name">
+			<p>Listings</p>
+			<h2>Featured </h2>
+		</div>
+	</div>
+	<div class="section-cards">
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+
+		
+
+
+	</div>
+	<div class="section-button">
+		<a href="./listing.html">See More &#8608;</a>
+	</div>
+</section>
+
+
+
+<section class="our-prop">
+	<div class="prop-note">
+		<h2>WELCOME TO <span style="font-family: 'Pacifico', cursive;">Hey!</span></h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. </p>
+	</div>
+	<div class="prop-list">
+		<div class="prop-list-card">
+			<svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 -960 960 960" width="100" fill="#6e6e73"><path d="M200-160v-373.872l-81.282 62.539L98.461-498 480-790l381.539 292.154-20.257 26.436L760-533.872V-160H200Zm33.846-33.846h492.308v-365.385L480-747.103 233.846-559.231v365.385Zm0 0h492.308-492.308ZM320-369.231q-12.385 0-21.577-9.192-9.192-9.192-9.192-21.577 0-12.385 9.192-21.577 9.192-9.192 21.577-9.192 12.385 0 21.577 9.192 9.192 9.192 9.192 21.577 0 12.385-9.192 21.577-9.192 9.192-21.577 9.192Zm160 0q-12.385 0-21.577-9.192-9.192-9.192-9.192-21.577 0-12.385 9.192-21.577 9.192-9.192 21.577-9.192 12.385 0 21.577 9.192 9.192 9.192 9.192 21.577 0 12.385-9.192 21.577-9.192 9.192-21.577 9.192Zm160 0q-12.385 0-21.577-9.192-9.192-9.192-9.192-21.577 0-12.385 9.192-21.577 9.192-9.192 21.577-9.192 12.385 0 21.577 9.192 9.192 9.192 9.192 21.577 0 12.385-9.192 21.577-9.192 9.192-21.577 9.192Z"></path> </svg>
+			<div>
+				<h3>House</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+			</div>
+		</div>
+
+
+
+		<div class="prop-list-card">
+			<svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 -960 960 960" width="100" fill="#6e6e73"><path d="M140-153.846v-518.718h161.795v-161.282h356.923v323.077H820v356.923H544.051v-161.795H415.949v161.795H140Zm33.846-33.846h127.949v-127.949H173.846v127.949Zm0-161.795h127.949v-127.436H173.846v127.436Zm0-161.282h127.949v-127.949H173.846v127.949Zm161.795 161.282h127.436v-127.436H335.641v127.436Zm0-161.282h127.436v-127.949H335.641v127.949Zm0-161.795h127.436V-800H335.641v127.436Zm161.282 323.077h127.949v-127.436H496.923v127.436Zm0-161.282h127.949v-127.949H496.923v127.949Zm0-161.795h127.949V-800H496.923v127.436Zm161.795 484.872h127.436v-127.949H658.718v127.949Zm0-161.795h127.436v-127.436H658.718v127.436Z"></path></svg>
+
+			<div>
+				<h3>Apartments</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+			</div>
+		</div>
+
+		<div class="prop-list-card">
+			<svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 -960 960 960" width="100" fill="#6e6e73"><path d="M160-160v-453.128l447.949-172.257V-440h81.282q0-22.846 16.312-39.116 16.312-16.269 39.218-16.269 22.906 0 39.073 16.269Q800-462.846 800-440v280H160Zm33.846-33.846h209.231V-440h171.026v-296.923L193.846-590.037v396.191Zm243.077 0h137.18v-89.231h55.384v89.231h136.667v-212.308H436.923v212.308Zm-67.692-280Zm232.564 280Zm0-27.949Z"></path></svg>
+
+			<div>
+				<h3>Villa</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+			</div>
+		</div>
+
+		<div class="prop-list-card">
+			<svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 -960 960 960" width="100" fill="#6e6e73"><path d="M109.231-153.846V-810l178.718-119.231L466.154-810v137.436h384.615v518.718H109.231Zm33.846-33.846h127.949v-127.949H143.077v127.949Zm0-161.795h127.949v-127.436H143.077v127.436Zm0-161.282h127.949v-127.949H143.077v127.949Zm0-161.795h127.949V-800H143.077v127.436Zm161.795 0h127.436V-800H304.872v127.436Zm0 484.872h512.051v-451.026H304.872v451.026Zm256.666-289.231v-33.846h137.18v33.846h-137.18Zm0 161.282v-33.846h137.18v33.846h-137.18Zm-129.23-161.282v-33.846h33.846v33.846h-33.846Zm0 161.282v-33.846h33.846v33.846h-33.846Z"></path></svg>
+
+			<div>
+				<h3>Officies</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- RECENT PROPAETY -->
+
+<!-- featured section -->
+<section class="featured">
+	<div class="section-heading">
+		<div class="side-line"></div>
+		<div class="h-name">
+			<p>Listings</p>
+			<h2>Recent </h2>
+		</div>
+	</div>
+	<div class="section-cards">
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="prop-card" onclick="document.location='./show.html'">
+			<div class="card-img">
+				<img src="./img/home-card.jpg">
+			</div>
+			<div class="card-details">
+				<h3 style="color: var(--headcolor);">House</h3>
+				<div class="card-perameter">
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-bounding-box" viewBox="0 0 16 16"><path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"></path></svg>
+            			<span>542 sqft</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-signpost-split" viewBox="0 0 16 16"><path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"></path></svg>
+            			<span>2 way</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-pin-map" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path></svg></svg>
+    					<span>Sikar</span>
+					</p>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z"/></svg>
+            			<span>4 Room</span>
+					</p>
+				</div>
+				<div class="card-pay">
+					<span>pay:180000&#8377; </span>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+	<div class="section-button">
+		<a href="./listing.html">See More &#8608;</a>
+	</div>
+</section>
+
+
+<footer id="footer">
+	
+</footer>
+
+</body>
+</html>
