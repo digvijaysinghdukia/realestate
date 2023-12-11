@@ -59,7 +59,7 @@ display: none;
     }
   
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 700px) {
     #dashbord{
         grid-template-columns: 100%;
     }
@@ -143,7 +143,7 @@ display: none;
   #customers a{
     color: red;
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 700px) {
         #d-cards{
             width: 100vw;
             height: auto;
