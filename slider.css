@@ -51,6 +51,7 @@
     background-color: #fff ;
     border-top-right-radius: 40px;
     text-align: center;
+    padding:20px;
   }
   button {
     position: absolute;
@@ -78,6 +79,13 @@
       width: 350px;
       height: 400px;
     }
+    .card .s-img img{
+      width: 200px;
+      height: 200px;
+  }
+       .data{
+           font-size: large;
+       }
   }
 
   @media screen and (min-width: 768px) {
