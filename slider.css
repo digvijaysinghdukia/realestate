@@ -74,6 +74,10 @@
     .card {
       flex: 0 0 100%; /* Display two cards at a time on larger screens */
     }
+    .card .info{
+      width: 350px;
+      height: 400px;
+    }
   }
 
   @media screen and (min-width: 768px) {
