@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function mySlider(){
+  document.addEventListener("DOMContentLoaded", function (){
 
     const slider = document.querySelector(".slider");
     let currentIndex = 0;
@@ -13,35 +13,37 @@ document.addEventListener("DOMContentLoaded", function mySlider(){
 
     let leanth = divWidth * totalSlides
 
-    totalSlides = Math.ceil(leanth / screenWidth);
+    totalSlides = Math.round(leanth / screenWidth);
 
+    
     function updateSlider() {
       const translateValue = -currentIndex * 100 + "%";
       slider.style.transform = `translateX(${translateValue})`;
     }
-
+    
     function nextSlide() {
       currentIndex = (currentIndex + 1) % totalSlides;
       updateSlider();
     }
-
+    document.getElementById('nextBtn').onclick = nextSlide;
+   
     function prevSlide() {
       currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
       updateSlider();
     }
+    document.getElementById('preBtn').onclick = prevSlide;
 
     function autoScroll() {
       nextSlide();
     }
 
-
     if (totalSlides <= 2) {
       setInterval(autoScroll, 6000);
 
     } else if (totalSlides <= 5){
-      setInterval(autoScroll, 4000);
+      setInterval(autoScroll, 5000);
     }else{
-      setInterval(autoScroll, 3000);
+      setInterval(autoScroll, 4000);
     }
     
   });
