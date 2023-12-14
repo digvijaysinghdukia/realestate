@@ -98,3 +98,7 @@
       flex: 0 0 33.3333%; /* Display three cards at a time on even larger screens */
     }
   }
+ @media screen and (min-width: 1440px) {
+  .card {
+    flex: 0 0 25%; /* Display three cards at a time on even larger screens */
+  }
