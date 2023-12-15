@@ -1,0 +1,303 @@
+<!-- helpcenter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helpcenter</title>
+    <link rel="stylesheet" title="nav-css" href="./navbar.css">
+    <link rel="stylesheet" title="nav-css" href="./footer.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+	<script src="./navbar.js"></script>
+	<script src="./headerfutter.js"></script>
+</head>
+<style>
+#help-page{
+    width: 100vw;
+    height: max-content;
+    background-color: rgb(185, 185, 185);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: left;
+    padding-top: 50px;
+    row-gap: 30px;
+}
+.q-area{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: left;
+    padding-top: 50px;
+    width: 80%;
+    row-gap: 20px;
+    padding-bottom: 30px;
+}
+#help-page .parts{
+    width: 70%;
+    height: max-content;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 50px auto;
+    font-size:medium;
+    place-items: center;
+    background-color: rgb(237 237 237);
+    border-radius: 10px;
+    font-weight: 500;
+}
+#help-page .head{
+    width: 70%;
+    height: max-content;
+    display: grid;
+    font-size:large;
+    place-items: center;
+    background-color: rgb(237 237 237);
+    font-weight: 500;
+}
+.q-area h3{
+    font-size: xx-large;
+}
+.head h3{
+    font-size: x-large;
+    width: 100%;
+    text-align: left;
+}
+#help-page .parts h4, #help-page .parts q{
+    width: 100%;
+    text-align: left;
+    
+}
+#help-page .parts > div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 10px;
+    font-size: smaller;
+}
+#content-us{
+    width: 80%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 70% auto;
+    font-size:medium;
+    place-items: center;
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#left-side{
+    width: 50%;
+    height: max-content;
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    row-gap: 30px;
+}
+#c-hend{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+}
+#left-side form{
+    width: 100%;
+    text-align: left;
+    display: grid;
+    
+}
+#left-side input{
+    height: 1; 
+}
+#left-side input, #left-side textarea{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(223 223 223);
+    text-align: left;
+    resize: none;
+}
+#right-side{
+    width: 100%;
+    height: 70%;
+    background-color: #1e1e1e;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: medium;
+}
+#right-side div{
+    width: 80%;
+    height: min-content;
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+#map{
+    width: 80%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    grid-template-rows: min-content min-content;
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+}
+#map-head{
+    width: 90%;
+    display: grid;
+    place-items: center;
+    padding: 50px;
+}
+#help-page h3{
+    font-size: xx-large;
+}
+#map-body{
+    width: 90%;
+    margin-top: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 950px) {
+    .q-area {
+        width: 100%;
+    }
+    #content-us {
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        row-gap: 30px;
+    }
+    #left-side {
+    width: 90%;
+    }
+    #right-side {
+        width: 100%;
+        height: 50vh;
+        background-color: #ffffff;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        color: #1e1e1e;
+    }
+}
+</style>
+<body>
+    <!-- web nevbar -->
+
+	<nav id="dnavBar">
+		<!-- html insert using js -->
+	</nav>
+
+	<!--navbar log in from -->
+    <div id="log_from_window">
+        <!-- html insert using js -->
+        
+    </div>
+
+
+
+    <div id="help-page">
+        <div class="q-area">
+            <h3>How can we help?</h3>
+            <div class="head" style="background-color: transparent; font-size: small;"><h3  style="font-size: large;">Popular topics</h3></div>
+            <div class="parts">
+                <h4>Waiting period for first payout</h4>
+                <q style="color: rgb(54, 54, 54);"> With so many different ways today to find information online, it can sometimes be hard to know where to go to first. </q>
+                <div>
+                    <span>
+                        <svg style="padding-left: 30px;" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16"><path d="M240-840h440v520L400-40l-50-50q-7-7-11.5-19t-4.5-23v-14l44-174H120q-32 0-56-24t-24-56v-80q0-7 2-15t4-15l120-282q9-20 30-34t44-14Zm360 80H240L120-480v80h360l-54 220 174-174v-406Zm0 406v-406 406Zm80 34v-80h120v-360H680v-80h200v520H680Z"/></svg>
+                    </span>
+                    <cite style="text-align: right;">--Hey! Team</cite>
+                </div>
+            </div>
+            <div class="parts">
+                <h4>How To Protect Your Computer Very Useful Tips</h4>
+                <q style="color: rgb(54, 54, 54);"> With so many different ways today to find information online, it can sometimes be hard to know where to go to first. </q>
+                <div>
+                    <span>
+                        <svg style="padding-left: 30px;" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16"><path d="M240-840h440v520L400-40l-50-50q-7-7-11.5-19t-4.5-23v-14l44-174H120q-32 0-56-24t-24-56v-80q0-7 2-15t4-15l120-282q9-20 30-34t44-14Zm360 80H240L120-480v80h360l-54 220 174-174v-406Zm0 406v-406 406Zm80 34v-80h120v-360H680v-80h200v520H680Z"/></svg>
+                    </span>
+                    <cite style="text-align: right;">--Hey! Team</cite>
+                </div>
+            </div>
+            <div class="parts">
+                <h4>E Banks That Accept Us Casino Players</h4>
+                <q style="color: rgb(54, 54, 54);"> With so many different ways today to find information online, it can sometimes be hard to know where to go to first. </q>
+                <div>
+                    <span>
+                        <svg style="padding-left: 30px;" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16"><path d="M240-840h440v520L400-40l-50-50q-7-7-11.5-19t-4.5-23v-14l44-174H120q-32 0-56-24t-24-56v-80q0-7 2-15t4-15l120-282q9-20 30-34t44-14Zm360 80H240L120-480v80h360l-54 220 174-174v-406Zm0 406v-406 406Zm80 34v-80h120v-360H680v-80h200v520H680Z"/></svg>
+                    </span>
+                    <cite style="text-align: right;">--Hey! Team</cite>
+                </div>
+            </div>
+            <div class="parts">
+                <h4>How To Protect Your Computer Very Useful Tips</h4>
+                <q style="color: rgb(54, 54, 54);"> With so many different ways today to find information online, it can sometimes be hard to know where to go to first. </q>
+                <div>
+                    <span>
+                        <svg style="padding-left: 30px;" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16"><path d="M240-840h440v520L400-40l-50-50q-7-7-11.5-19t-4.5-23v-14l44-174H120q-32 0-56-24t-24-56v-80q0-7 2-15t4-15l120-282q9-20 30-34t44-14Zm360 80H240L120-480v80h360l-54 220 174-174v-406Zm0 406v-406 406Zm80 34v-80h120v-360H680v-80h200v520H680Z"/></svg>
+                    </span>
+                    <cite style="text-align: right;">--Hey! Team</cite>
+                </div>
+            </div>
+        </div>    
+        <div id="content-us">
+            <div id="left-side">
+                <div id="c-hend">
+                    <h3>Contatc Us</h3><br><br>
+                    <span style="color:var(--lightcolor);">Feel Free to contact us any time. We will get back to you as soon as we can!.</span>
+                </div>
+                <form>
+                    <input type="text" id="fname" name="fname" placeholder="Type Full Name"><br>
+                    <input type="email" id="lname" name="lname"  placeholder="YourEmail" ><br>
+                    <textarea name="message" rows="8" cols="1" placeholder="type your message... "></textarea>
+                    
+                    <br><br>
+                    <input style=" text-align: center; width: 100%; " type="submit" value="Submit">
+                    </form>
+            </div>
+            <div id="right-side">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#888" height="24" viewBox="0 -960 960 960" width="24"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                    <span>+91830216XXXX</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#888" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                    <span>help@hey.com</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#888" height="24" viewBox="0 -960 960 960" width="24"><path d="M519-82v-80q42-6 81.5-23t74.5-43l58 58q-47 37-101 59.5T519-82Zm270-146-56-56q26-33 42-72.5t22-83.5h82q-8 62-30.5 115.5T789-228Zm8-292q-6-45-22-84.5T733-676l56-56q38 44 61.5 98T879-520h-82ZM439-82q-153-18-255.5-131T81-480q0-155 102.5-268T439-878v80q-120 17-199 107t-79 211q0 121 79 210.5T439-162v80Zm238-650q-36-27-76-44t-82-22v-80q59 5 113 27.5T733-790l-56 58ZM480-280q-58-49-109-105t-51-131q0-68 46.5-116T480-680q67 0 113.5 48T640-516q0 75-51 131T480-280Zm0-200q18 0 30.5-12.5T523-523q0-17-12.5-30T480-566q-18 0-30.5 13T437-523q0 18 12.5 30.5T480-480Z"/></svg>
+                    <span>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span>
+                </div>
+            </div>
+        </div>
+        <div id="map">
+            <div id="map-head">
+                <h3>Find Us on Google Map</h3><br>
+                <p style="color:var(--lightcolor);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quo beatae quasi assumenda, expedita aliquam minima tenetur maiores neque incidunt repellat aut voluptas hic dolorem sequi ab porro, quia error.</p>
+            </div>
+            <div id="map-body">
+                <iframe src="https://www.google.com/maps/place/Sikar,+Rajasthan/@27.6094677,75.1428064,12z/data=!4m6!3m5!1s0x396ca4b82334472b:0x7f485cce3a6bf355!8m2!3d27.6093912!4d75.1397935!16s%2Fg%2F11bc6636_q?entry=ttu" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>   
+    </div>
+
+    <footer id="footer">
+	
+    </footer>
+</body>
+</html>
