@@ -5,19 +5,59 @@ footer{
     background-color: #fff;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: 100%;
     overflow: hidden;
 }
-footer div{
+footer #f-head{
     width: 100%;
-    height: auto;
+    height: fit-content;
     display: grid;
-    place-items: center;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: min-content min-content auto;
+    padding-left: 40px;
+    align-items: center;
+    column-gap: 10px;
 }
-@media screen and (max-width: 650px) {
-    footer{
-        grid-template-columns: repeat(1 , 1fr);
-        grid-template-rows: repeat(2 , 1fr);
-    } 
+#links-area{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+}
+#link{
+    width: 80%;
+    text-align: left;
+    display: grid;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+#link h4{
+    font-size: large;
+    padding-top: 15px;
+}
+#link a{
+    color: #444;
+    transition: 0.5s;
+    padding-top: 10px
+}
+#link a:hover{
+    color: #000;
+}
+#f-down{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    padding-left: 40px;
+    align-items: center;
+    column-gap: 10px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 550px) {
+    #links-area{
+        grid-template-columns: 100%;
+    }
+    #f-down{
+        grid-template-columns:100%;
+    }
 }
