@@ -395,7 +395,7 @@
 			height: max-content;
 			padding: 10px;
 			display: grid;
-			background-color: #ededed;
+			background-color: #fff;
 			grid-template-rows: 36px auto;
 			row-gap: 10px;
 			border-radius: 15px;
