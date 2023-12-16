@@ -53,12 +53,23 @@
     height: 36px;
     font-weight: 500;
     padding-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: rgb(223 223 223);
+    margin-top: 10px;
 
 }
 .add-props textarea{
     width: 100%;
     resize: vertical;
     padding: 0px 10px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: rgb(223 223 223);
+    margin-top: 10px;
+    padding-top: 10px
 }
 
 /* Property Media */
