@@ -131,15 +131,17 @@
     width: auto;
     height: 100px;
 }
-  .inquiry input {
+  .inquiry input,.inquiry textarea{
     width: 100%;
     display: block;
     box-sizing: border-box;
     margin: 10px 0;
     padding: 14px 12px;
     font-size: 16px;
-    border-radius: 2px; 
-    font-family: Raleway, sans-serif;
+    border-radius: 15px;
+    outline: none;
+    border: 0px;
+    background-color: #dadada;
   }
 
 
