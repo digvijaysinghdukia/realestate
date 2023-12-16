@@ -320,7 +320,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
   <div id="f-down">
 	  <span>Copyright © 2023 Hey Inc. All rights reserved.</span>
-	  <span>Privacy Policy   Terms of Use  Legal</span>
+	  <span>Privacy Policy,   Terms of Use,  Legal</span>
 	  <span>India</span>
   </div>
 	 
