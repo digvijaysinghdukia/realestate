@@ -1,49 +1,49 @@
-		.featured{
-			width: 100vw;
-			height: auto;
-			display: grid;
-			place-items: center;
-			grid-template-rows: auto auto auto;
-			grid-row-gap: 50px;
-			margin-top: 50px;
-		}
-		.featured .section-heading{
-			width: 100%;
-			height: 100%;
-			display: grid;
-			grid-template-columns: 5% auto;
-			align-items: center;
-			text-align: left;
-			
-		}
-		.featured .section-heading .side-line{
-			width: 10px;
-			height: 5rem;
-			background-color: var(--lightcolor);
-			display: grid;
-			place-items: center;
-			margin-left: 90%;
+.featured{
+width: 100vw;
+height: auto;
+display: grid;
+place-items: center;
+grid-template-rows: auto auto auto;
+grid-row-gap: 50px;
+margin-top: 50px;
+}
+.featured .section-heading{
+width: 100%;
+height: 100%;
+display: grid;
+grid-template-columns: 5% auto;
+align-items: center;
+text-align: left;
+
+}
+.featured .section-heading .side-line{
+width: 10px;
+height: 5rem;
+background-color: var(--lightcolor);
+display: grid;
+place-items: center;
+margin-left: 90%;
 
 
-		}
-		.featured .section-heading .h-name{
-			padding-left: 3rem;
-			display: grid;
-			grid-auto-flow: row;
-		}
-		.featured .section-heading h2{
-			font-size: xxx-large;
-			font-weight: 700;
-			color: var(--headcolor);
-			
-		}
-		.featured .section-heading p{
-			font-size: large;
-			font-weight: 700;
-			color: var(--lightcolor);;
-		}
+}
+.featured .section-heading .h-name{
+padding-left: 3rem;
+display: grid;
+grid-auto-flow: row;
+}
+.featured .section-heading h2{
+font-size: xxx-large;
+font-weight: 700;
+color: var(--headcolor);
 
-		 .section-cards{
+}
+.featured .section-heading p{
+font-size: large;
+font-weight: 700;
+color: var(--lightcolor);;
+}
+
+.section-cards{
 width: 100vw;
 height: fit-content;
 display: grid;
