@@ -32,13 +32,14 @@ footer #f-head{
     padding: 20px 0px;
 }
 #link h4{
-    font-size: large;
+    font-size: medium;
     padding-top: 15px;
 }
 #link a{
     color: #444;
     transition: 0.5s;
-    padding-top: 10px
+    padding-top: 10px;
+    font-size: small;
 }
 #link a:hover{
     color: #000;
