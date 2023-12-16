@@ -196,5 +196,7 @@
   }
   .inquiry {
     top: 0px;
+    wirth:100%;
+    padding: 10px 10px;
   }
 }
