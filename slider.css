@@ -71,7 +71,7 @@ left: 10px;
 right: 10px;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 768px) {
 .card {
 flex: 0 0 100%; /* Display one cards at a time on larger screens */
 }
