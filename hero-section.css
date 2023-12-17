@@ -1,78 +1,79 @@
 #hero-section{
-			width: 100vw;
-			height: 100vh;
-			position: relative;
-			background-image: url("./img/home.jpg");
-			background-repeat: no-repeat;
-			background-position: center;
-			background-attachment: fixed;
-			overflow-x: hidden;
-		}
-		#hero-part{
-			width: 100vw;
-			height: 100vh;
-			position: relative;
-			display: grid;
-			grid-template-rows: auto auto ;
-			position: relative;
-			place-items: center;
-			background-color: #a5a5a54d;
-			color: var(--headcolor)	;
-			font-size: x-large;
-			text-align: center;
-			grid-gap: 50px;
-		}
-		#hero-part .hero-top{
-			width: 100%;
-			position: relative;
-			margin-top: 50px;
-		}
+width: 100vw;
+height: 100vh;
+position: relative;
+background-image: url("./img/home.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+overflow-x: hidden;
+}
+#hero-part{
+width: 100vw;
+height: 100vh;
+position: relative;
+display: grid;
+grid-template-rows: auto auto ;
+position: relative;
+place-items: center;
+background-color: #a5a5a54d;
+color: var(--headcolor)	;
+font-size: x-large;
+text-align: center;
+grid-gap: 50px;
+}
+#hero-part .hero-top{
+width: 100%;
+position: relative;
+margin-top: 50px;
+}
 
-    /* Cursor */
-    .txt-type > .txt {
-      border-right: 0.2rem solid #777;
-    }
+/* Cursor */
+.txt-type > .txt {
+border-right: 0.2rem solid #777;
+}
 
 
 
 /*    hero-section counter style*/
 
-	#hero-prop-list{
-		width: 100%;
-		height: 100%;
-		display: grid;
-		grid-auto-flow: column;
-		grid-gap: 20px;
-		place-items: center;
-		margin-bottom: 50px;
-	}
-	.counter-container{
-		display: grid;
-		width: 13rem;
-		height: 13rem;
-		place-items: center;
-		background-color: white;
-		border-radius: 20px;
-		color: var(--lightcolor);
-		font-size: large;
-		font-weight: 700;
-	}
-	.counter{
-		font-size: xx-large;
-		color: var(--headcolor);
-	}
-	
-	@media screen and (max-width: 650px) {
-		#hero-part {
-			height: 130vh;
-		}
-		#hero-prop-list {
-			grid-auto-flow: row;
-		}
-		#hero-section{
-			height: auto;
-		}
-		#hero-part{
-			height: auto;
-		}
-	}
+#hero-prop-list{
+width: 100%;
+height: 100%;
+display: grid;
+grid-auto-flow: column;
+grid-gap: 20px;
+place-items: center;
+margin-bottom: 50px;
+}
+.counter-container{
+display: grid;
+width: 13rem;
+height: 13rem;
+place-items: center;
+background-color: white;
+border-radius: 20px;
+color: var(--lightcolor);
+font-size: large;
+font-weight: 700;
+}
+.counter{
+font-size: xx-large;
+color: var(--headcolor);
+}
+
+@media screen and (max-width: 650px) {
+#hero-part {
+height: 130vh;
+}
+#hero-prop-list {
+grid-auto-flow: row;
+}
+#hero-section{
+height: auto;
+}
+#hero-part{
+height: auto;
+}
+}
