@@ -73,7 +73,7 @@ right: 10px;
 
 @media screen and (max-width: 481px) {
 .card {
-flex: 0 0 100%; /* Display two cards at a time on larger screens */
+flex: 0 0 100%; /* Display one cards at a time on larger screens */
 }
 .card .info{
 width: 350px;
@@ -93,12 +93,14 @@ display: none;
 .next-button {
 display: none;
 }
-
+.slider {
+transition: transform 0.3s ease-in-out;
+}
 }
 
 @media screen and (min-width: 768px) {
 .card {
-flex: 0 0 50%; /* Display three cards at a time on even larger screens */
+flex: 0 0 50%; /* Display two cards at a time on even larger screens */
 }
 }
 @media screen and (min-width: 1024px) {
@@ -108,5 +110,5 @@ flex: 0 0 33.3333%; /* Display three cards at a time on even larger screens */
 }
 @media screen and (min-width: 1440px) {
 .card {
-flex: 0 0 25%; /* Display three cards at a time on even larger screens */
+flex: 0 0 25%; /* Display four cards at a time on even larger screens */
 }
