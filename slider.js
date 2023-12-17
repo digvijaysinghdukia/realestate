@@ -33,17 +33,37 @@
     }
     document.getElementById('preBtn').onclick = prevSlide;
 
+
     function autoScroll() {
       nextSlide();
     }
-
-    if (totalSlides <= 2) {
-      setInterval(autoScroll, 6000);
-
-    } else if (totalSlides <= 5){
-      setInterval(autoScroll, 5000);
-    }else{
-      setInterval(autoScroll, 4000);
-    }
+    let stop = setInterval(autoScroll, 4000);
     
+    
+
+    
+
+    let startX;
+
+        document.addEventListener("touchstart", (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        document.addEventListener("touchend", (e) => {
+            const diff = startX - e.changedTouches[0].clientX;
+            if (diff > 0) {
+              nextSlide()
+              console.log("Left swipe");
+              clearInterval(stop);
+            } else if (diff < 0) {
+              prevSlide()
+                console.log("Right swipe");
+                clearInterval(stop);
+            }
+        });
+
+
+
+           
   });
+  
