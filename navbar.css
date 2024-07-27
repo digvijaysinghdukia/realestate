@@ -59,6 +59,11 @@
 	}
 	.respo-desk-links{
 		display: grid;
+		color: black;
+		transition-duration: .3s;
+	}
+	.respo-desk-links:hover{
+		color: #0180f3;
 	}
 	.respo-mob-icon{
 		display: none;

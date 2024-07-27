@@ -1,4 +1,5 @@
 // Use the DOMContentLoaded event to ensure the DOM is fully loaded
+// this fucation insert navbar | loaction all page
 document.addEventListener('DOMContentLoaded', function() {
     // Insert HTML into the div with the ID 'targetDiv'
     var targetDiv = document.getElementById('navBar');
@@ -7,18 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
 	  <!-- html insert using js -->
 	  <div id="nev_logo" class="logo-desk"><a href="./index.html"><img title="logo" src="./logo_kh.webp"></a></div>
 	  <div id="nav_links">
-		  <h4 class="respo-desk-links">Commercial</h4>
-		  <h4 class="respo-desk-links">Residential</h4>
-		  <h4 class="respo-desk-links">Agriculture</h4>
+		  	<a href="#" class="respo-desk-links">Room</a>
+			<a href="#" class="respo-desk-links">Flate</a>
+			<a href="#" class="respo-desk-links">About us</a>
+			<a href="#" class="respo-desk-links">Contect</a>
 		  <span onclick="openNav()" class="respo-mob-icon">
 			  <svg xmlns="http://www.w3.org/2000/svg" height="24" fill="#000" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
 		  </span>
 		  <!-- mobile side nav -->
 		  <div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="#">Commercial</a>
-			<a href="#">Residential</a>
-			<a href="#">Agriculture</a>
+			<a href="#">Room</a>
+			<a href="#">flate</a>
 			<a href="#">About</a>
 			<a href="#">Contact</a>
 		  </div>
@@ -115,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-
+// this fuction notification-slider toggle btn
   function toggleHighlight() {
 	var close = document.getElementById('notification-slider');
 	close.style.top = close.style.top === '0px' ? '-150vh' : '0px';
@@ -125,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
+// this function create responsive mobile nuvber
   document.addEventListener('DOMContentLoaded', function() {
     // Insert HTML into the div with the ID 'targetDiv'
     var targetDiv = document.getElementById('dnavBar');
@@ -134,9 +135,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		<!-- html insert using js -->
 		<div id="nev_logo" class="logo-desk"><img title="logo" src="./logo_kh.webp"></div>
 		<div id="nav_links">
-			<h4 class="respo-desk-links">Commercial</h4>
-			<h4 class="respo-desk-links">Residential</h4>
-			<h4 class="respo-desk-links">Agriculture</h4>
+			<a href="#" class="respo-desk-links">Room</a>
+			<a href="#" class="respo-desk-links">Flate</a>
 			<span onclick="openNav()" class="respo-mob-icon">
 				<svg xmlns="http://www.w3.org/2000/svg" height="24" fill="#000" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
 			</span>
@@ -145,7 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			  <a href="#">Commercial</a>
 			  <a href="#">Residential</a>
-			  <a href="#">Agriculture</a>
 			  <a href="#">About</a>
 			  <a href="#">Contact</a>
 			</div>
@@ -242,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-
+// this function was create log-in-from in navbar
  // Use the DOMContentLoaded event to ensure the DOM is fully loaded
  document.addEventListener('DOMContentLoaded', function() {
     // Insert HTML into the div with the ID 'targetDiv'
@@ -267,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-
+  // this function was create footer
   // Use the DOMContentLoaded event to ensure the DOM is fully loaded
   document.addEventListener('DOMContentLoaded', function() {
     // Insert HTML into the div with the ID 'targetDiv'
